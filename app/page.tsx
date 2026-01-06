@@ -126,6 +126,24 @@ export default function Home() {
       githubUrl: "#",
       techStack: ["Next.js", "FFmpeg", "Twitter API", "AI Agent"],
     },
+    {
+      name: "Immersive 3D Portfolio",
+      type: "WEB EXPERIENCE",
+      description: "This portfolio itself. A cinematic dashboard featuring 'fly-through' navigation, 'Mission Control' aesthetics, and seamless WebGL transitions.",
+      status: "ONLINE" as const,
+      uptime: "100%",
+      href: "https://whitemes.github.io",
+      imageUrl: "https://picsum.photos/id/119/1200/800", // Laptop/Workstation
+      logs: [
+        "> Initializing R3F Engine...",
+        "> Loading assets (draco)...",
+        "> Baking lighting maps...",
+        "> Cinematic sequence ready...",
+        "> Welcome, System Architect.",
+      ],
+      githubUrl: "https://github.com/Whitemes/portfolio-ramananjatovo",
+      techStack: ["Next.js 16", "R3F", "TypeScript", "Tailwind v4"],
+    },
   ];
 
   const handleNext = () => {
