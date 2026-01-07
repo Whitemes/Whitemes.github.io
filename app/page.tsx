@@ -144,6 +144,24 @@ export default function Home() {
       githubUrl: "https://github.com/Whitemes/portfolio-ramananjatovo",
       techStack: ["Next.js 16", "R3F", "TypeScript", "Tailwind v4"],
     },
+    {
+      name: "Baba Is You - Engineering",
+      type: "GAME ENGINE",
+      description: "A professional reimplementation of the 'Baba Is You' puzzle game engine, focusing on Software Architecture, Production Debugging, and Cloud-Native Deployment.",
+      status: "ONLINE" as const,
+      uptime: "99.9%",
+      href: "https://babaisyou-production.up.railway.app",
+      imageUrl: "https://picsum.photos/id/133/1200/800", // Automobile/Mechanical/Engine looking
+      logs: [
+        "> Booting Spring Boot 3 kernel...",
+        "> Initializing WebSocket handler...",
+        "> Loading hexagonal architecture...",
+        "> Transmutation engine online...",
+        "> 8 levels loaded. Game Start.",
+      ],
+      githubUrl: "https://github.com/Whitemes/BabaIsYou",
+      techStack: ["Java 21", "Spring Boot 3", "WebSockets", "Docker", "Railway"],
+    },
   ];
 
   const handleNext = () => {
