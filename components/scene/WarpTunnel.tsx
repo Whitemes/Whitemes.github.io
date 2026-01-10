@@ -38,8 +38,8 @@ export function WarpTunnel({ fading }: WarpTunnelProps) {
                 // Fast fade out
                 materialRef.current.opacity = THREE.MathUtils.lerp(materialRef.current.opacity, 0, delta * 3);
             } else {
-                // Fade in / Stabilize
-                materialRef.current.opacity = THREE.MathUtils.lerp(materialRef.current.opacity, 0.6, delta * 2);
+                // Fade in / Stabilize (subtle for white background)
+                materialRef.current.opacity = THREE.MathUtils.lerp(materialRef.current.opacity, 0.3, delta * 2);
             }
         }
 
@@ -75,10 +75,10 @@ export function WarpTunnel({ fading }: WarpTunnelProps) {
             <boxGeometry args={[0.2, 0.2, 1]} />
             <meshBasicMaterial
                 ref={materialRef}
-                color="#60a5fa"
+                color="#9ca3af"
                 transparent
                 opacity={0} // Start invisible, let lerp handle fade in
-                blending={THREE.AdditiveBlending}
+                blending={THREE.NormalBlending}
             />
         </instancedMesh>
     );
