@@ -129,7 +129,7 @@ export default function Home() {
     {
       name: "Immersive 3D Portfolio",
       type: "WEB EXPERIENCE",
-      description: "This portfolio itself. A cinematic dashboard featuring 'fly-through' navigation, 'Mission Control' aesthetics, and seamless WebGL transitions.",
+      description: "This portfolio itself. A clean, immersive experience featuring 'fly-through' navigation, White Gallery aesthetics, and seamless WebGL transitions.",
       status: "ONLINE" as const,
       uptime: "100%",
       href: "https://whitemes.github.io",
@@ -139,7 +139,7 @@ export default function Home() {
         "> Loading assets (draco)...",
         "> Baking lighting maps...",
         "> Cinematic sequence ready...",
-        "> Welcome, System Architect.",
+        "> Welcome.",
       ],
       githubUrl: "https://github.com/Whitemes/portfolio-ramananjatovo",
       techStack: ["Next.js 16", "R3F", "TypeScript", "Tailwind v4"],

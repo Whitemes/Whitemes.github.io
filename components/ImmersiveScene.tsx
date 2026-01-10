@@ -55,7 +55,7 @@ export function ImmersiveScene({ mouseX, mouseY, visualState, imageUrls = [], pr
     const isHandover = visualState === 'handover';
     const isEntered = visualState === 'entered';
 
-    // Dark background for any state except IDLE
+    // White background for any state except IDLE
     const isDark = isWarping || isHandover || isEntered;
 
     return (
