@@ -77,20 +77,21 @@ function ProjectCard({ project, index, isActive, animateEntry = false }: { proje
                         }}
                     >
                         {/*
-                            WHITE GALLERY CARD DESIGN
-                            - Container: White/Clean, Subtle Shadow
-                            - Minimal Border
+                            GLASS & AURORA CARD DESIGN
+                            - Container: Glassmorphism with subtle color gradients
+                            - Minimal Border with glow
                             - Clean Typography
                         */}
                         <div className={`
-                            w-[1000px] h-[600px]
-                            bg-white/95 backdrop-blur-sm
-                            border border-gray-200/50
-                            rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] overflow-hidden
+                            w-[1000px] h-[600px] relative
+                            bg-white/80 backdrop-blur-xl
+                            border border-white/60
+                            rounded-2xl shadow-[0_8px_40px_rgba(0,0,0,0.12)] overflow-hidden
                             flex flex-row
                             font-sans text-gray-900
                             transition-all duration-700 ease-out
-                            ${isHiddenInitial ? 'opacity-0 translate-y-8' : (isActive ? 'opacity-100 translate-y-0' : 'opacity-50 translate-y-0 scale-95')}
+                            before:absolute before:inset-0 before:bg-gradient-to-br before:from-blue-50/40 before:via-purple-50/40 before:to-pink-50/40 before:opacity-60
+                            ${isHiddenInitial ? 'opacity-0 translate-y-8' : (isActive ? 'opacity-100 translate-y-0 shadow-[0_12px_60px_rgba(139,92,246,0.15)]' : 'opacity-50 translate-y-0 scale-95')}
                         `}>
                             {/* Left: Project Image */}
                             <div className="w-[55%] h-full relative group overflow-hidden bg-gray-100">
@@ -129,12 +130,12 @@ function ProjectCard({ project, index, isActive, animateEntry = false }: { proje
                                 </div>
 
                                 {/* Action Buttons */}
-                                <div className="mt-auto grid grid-cols-[1fr_auto] gap-4">
+                                <div className="mt-auto grid grid-cols-[1fr_auto] gap-4 relative z-10">
                                     <a
                                         href={project.href}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center justify-center gap-3 px-6 py-4 bg-gray-900 text-white hover:bg-gray-800 transition-all rounded-xl font-semibold group shadow-sm"
+                                        className="flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-gray-900 via-purple-900 to-gray-900 text-white hover:scale-[1.02] transition-all rounded-xl font-semibold group shadow-lg hover:shadow-purple-500/30"
                                     >
                                         <span>View Project</span>
                                         <ExternalLink className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -144,7 +145,7 @@ function ProjectCard({ project, index, isActive, animateEntry = false }: { proje
                                         href={project.githubUrl || project.repoUrl || '#'}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center justify-center px-4 py-4 border border-gray-200 text-gray-700 hover:text-gray-900 hover:border-gray-300 hover:bg-gray-50 transition-all rounded-xl"
+                                        className="flex items-center justify-center px-4 py-4 border border-gray-300/50 bg-white/50 backdrop-blur-sm text-gray-700 hover:text-gray-900 hover:border-purple-300 hover:bg-purple-50/50 transition-all rounded-xl"
                                         title="View Source"
                                     >
                                         <Github className="w-6 h-6" />
