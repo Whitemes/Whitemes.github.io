@@ -76,61 +76,45 @@ function ProjectCard({ project, index, isActive, animateEntry = false }: { proje
                             pointerEvents: isActive ? 'auto' : 'none'
                         }}
                     >
-                        {/* 
-                            MISSION CONTROL WIDGET DESIGN 
-                            - Container: Black/80, Blur, Emerald Indicator
-                            - Header: System Header
-                            - Content: Tech Stack Pills
+                        {/*
+                            WHITE GALLERY CARD DESIGN
+                            - Container: White/Clean, Subtle Shadow
+                            - Minimal Border
+                            - Clean Typography
                         */}
                         <div className={`
-                            w-[1000px] h-[600px] 
-                            bg-black/80 backdrop-blur-xl
-                            border border-white/10 border-l-4 border-l-emerald-500
-                            rounded-lg shadow-2xl overflow-hidden
+                            w-[1000px] h-[600px]
+                            bg-white/95 backdrop-blur-sm
+                            border border-gray-200/50
+                            rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] overflow-hidden
                             flex flex-row
-                            font-sans text-white
+                            font-sans text-gray-900
                             transition-all duration-700 ease-out
-                            ${isHiddenInitial ? 'opacity-0 translate-y-8' : (isActive ? 'opacity-100 translate-y-0' : 'opacity-40 grayscale translate-y-0 scale-95')}
+                            ${isHiddenInitial ? 'opacity-0 translate-y-8' : (isActive ? 'opacity-100 translate-y-0' : 'opacity-50 translate-y-0 scale-95')}
                         `}>
-                            {/* Left: Project Image (Keeping the visual anchor) */}
-                            <div className="w-[55%] h-full relative group overflow-hidden bg-black">
+                            {/* Left: Project Image */}
+                            <div className="w-[55%] h-full relative group overflow-hidden bg-gray-100">
                                 <img
                                     src={project.imageUrl}
                                     alt={project.name}
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100"
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                     draggable={false}
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black/90" />
-                                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_#000_150%)]" />
-
-                                {/* Overlay System Text on Image */}
-                                <div className="absolute top-6 left-6 font-mono text-xs text-emerald-400/80 tracking-widest bg-black/60 px-2 py-1 rounded">
-                                    IMG_SRC: {project.imageUrl.split('/').pop()}
-                                </div>
+                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-white/80" />
                             </div>
 
-                            {/* Right: Technical Data Panel */}
-                            <div className="w-[45%] p-10 flex flex-col relative bg-gradient-to-b from-white/5 to-transparent">
-
-                                {/* Header: System Status */}
-                                <div className="flex items-center justify-between mb-8 border-b border-white/10 pb-4">
-                                    <span className="font-mono text-xs text-emerald-500/70 tracking-[0.2em]">
-                                        [ SYSTEM :: {project.status} ]
-                                    </span>
-                                    <span className="font-mono text-xs text-slate-500">
-                                        ID: {index.toString().padStart(3, '0')}
-                                    </span>
-                                </div>
+                            {/* Right: Clean Info Panel */}
+                            <div className="w-[45%] p-10 flex flex-col relative">
 
                                 {/* Title & Type */}
-                                <div className="mb-6">
-                                    <div className="text-xs font-bold text-slate-400 tracking-widest uppercase mb-2">
+                                <div className="mb-8">
+                                    <div className="text-xs font-semibold text-gray-500 tracking-wider uppercase mb-3">
                                         {project.type}
                                     </div>
-                                    <h1 className="text-4xl font-bold text-white mb-4 leading-tight">
+                                    <h1 className="text-4xl font-bold text-gray-900 mb-4 leading-tight">
                                         {project.name}
                                     </h1>
-                                    <p className="text-slate-400 text-lg leading-relaxed mb-6 font-light line-clamp-3">
+                                    <p className="text-gray-600 text-lg leading-relaxed mb-6 line-clamp-3">
                                         {project.description}
                                     </p>
                                 </div>
@@ -138,34 +122,29 @@ function ProjectCard({ project, index, isActive, animateEntry = false }: { proje
                                 {/* Tech Stack Pills */}
                                 <div className="flex flex-wrap gap-2 mb-8">
                                     {project.techStack?.map((tech, i) => (
-                                        <span key={i} className="px-3 py-1 text-xs font-mono text-emerald-400 bg-emerald-950/30 border border-emerald-500/20 rounded-md">
+                                        <span key={i} className="px-3 py-1.5 text-xs font-medium text-gray-700 bg-gray-100 border border-gray-200 rounded-lg">
                                             {tech}
                                         </span>
                                     ))}
-                                    {!project.techStack && (
-                                        <span className="px-3 py-1 text-xs font-mono text-slate-500 bg-slate-800/50 rounded-md">
-                                            NO_DATA
-                                        </span>
-                                    )}
                                 </div>
 
-                                {/* Action Matrix */}
+                                {/* Action Buttons */}
                                 <div className="mt-auto grid grid-cols-[1fr_auto] gap-4">
                                     <a
                                         href={project.href}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center justify-center gap-3 px-6 py-4 bg-emerald-500/10 text-emerald-500 border border-emerald-500/50 hover:bg-emerald-500 hover:text-black transition-all rounded-md font-bold uppercase tracking-wide group"
+                                        className="flex items-center justify-center gap-3 px-6 py-4 bg-gray-900 text-white hover:bg-gray-800 transition-all rounded-xl font-semibold group shadow-sm"
                                     >
-                                        <span>Initialize</span>
-                                        <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                                        <span>View Project</span>
+                                        <ExternalLink className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                                     </a>
 
                                     <a
                                         href={project.githubUrl || project.repoUrl || '#'}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center justify-center px-4 py-4 border border-white/10 text-slate-400 hover:text-white hover:border-white/30 hover:bg-white/5 transition-all rounded-md"
+                                        className="flex items-center justify-center px-4 py-4 border border-gray-200 text-gray-700 hover:text-gray-900 hover:border-gray-300 hover:bg-gray-50 transition-all rounded-xl"
                                         title="View Source"
                                     >
                                         <Github className="w-6 h-6" />

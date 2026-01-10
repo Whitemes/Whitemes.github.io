@@ -242,22 +242,21 @@ export default function Home() {
           <div className="hidden md:flex fixed bottom-10 left-1/2 -translate-x-1/2 z-50 items-center gap-6 pointer-events-auto">
             <button
               onClick={handlePrev}
-              className={`p-4 rounded-full bg-black/40 backdrop-blur-md border border-white/10 text-white transition-all hover:scale-110 active:scale-95 hover:bg-white/10`}
+              className={`p-4 rounded-full bg-white/90 backdrop-blur-md border border-gray-200 text-gray-900 transition-all hover:scale-110 active:scale-95 hover:bg-white shadow-sm`}
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
 
-            <div className="flex flex-col items-center">
-              <span className="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Tunnel View</span>
-              <span className="font-mono text-xl font-bold text-white tracking-widest">
-                {activeIndex + 1} <span className="text-slate-600">/</span> {projects.length}
+            <div className="flex flex-col items-center bg-white/90 backdrop-blur-md border border-gray-200 rounded-full px-6 py-3 shadow-sm">
+              <span className="text-xl font-semibold text-gray-900">
+                {activeIndex + 1} <span className="text-gray-400">/</span> {projects.length}
               </span>
             </div>
 
             <button
               onClick={handleNext}
               disabled={activeIndex === projects.length - 1}
-              className={`p-4 rounded-full bg-white text-black transition-all hover:scale-110 active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.3)] disabled:opacity-30 disabled:bg-slate-800 disabled:text-white disabled:hover:scale-100 disabled:shadow-none ${activeIndex === projects.length - 1 ? 'cursor-not-allowed' : 'hover:bg-emerald-400'}`}
+              className={`p-4 rounded-full bg-gray-900 text-white transition-all hover:scale-110 active:scale-95 shadow-md disabled:opacity-30 disabled:bg-gray-300 disabled:text-gray-500 disabled:hover:scale-100 disabled:shadow-none ${activeIndex === projects.length - 1 ? 'cursor-not-allowed' : ''}`}
             >
               <ChevronRight className="w-6 h-6" />
             </button>

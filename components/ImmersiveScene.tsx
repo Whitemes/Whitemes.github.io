@@ -59,9 +59,9 @@ export function ImmersiveScene({ mouseX, mouseY, visualState, imageUrls = [], pr
     const isDark = isWarping || isHandover || isEntered;
 
     return (
-        <div className={`fixed inset-0 z-0 transition-colors duration-1000 ${isDark ? 'bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-900 via-[#050505] to-black' : 'bg-transparent'}`}>
+        <div className={`fixed inset-0 z-0 transition-colors duration-1000 ${isDark ? 'bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-50 via-white to-gray-100' : 'bg-transparent'}`}>
             {/* Subtle Texture or Ambient Glow */}
-            <div className={`absolute inset-0 bg-black/20 ${isDark ? 'opacity-100' : 'opacity-0'} transition-opacity duration-1000`} />
+            <div className={`absolute inset-0 bg-white/10 ${isDark ? 'opacity-100' : 'opacity-0'} transition-opacity duration-1000`} />
 
             <Canvas>
                 {/* 
@@ -75,15 +75,25 @@ export function ImmersiveScene({ mouseX, mouseY, visualState, imageUrls = [], pr
                     <CameraController mouseX={mouseX} mouseY={mouseY} />
                 )}
 
-                {/* Cinematic Lighting - Dark Mode Restore */}
-                <ambientLight intensity={0.4} color="#ffffff" />
-                <directionalLight position={[10, 10, 5]} intensity={1.5} color="#c084fc" /> {/* Purple tint */}
-                <pointLight position={[-10, -5, 5]} intensity={2.0} color="#3b82f6" /> {/* Blue rim light */}
+                {/* High Key Lighting - White Gallery */}
+                <ambientLight intensity={1.2} color="#ffffff" />
+                <directionalLight
+                    position={[5, 8, 5]}
+                    intensity={0.8}
+                    color="#ffffff"
+                    castShadow
+                    shadow-mapSize={[1024, 1024]}
+                    shadow-camera-far={50}
+                    shadow-camera-left={-10}
+                    shadow-camera-right={10}
+                    shadow-camera-top={10}
+                    shadow-camera-bottom={-10}
+                />
 
-                <Environment preset="city" />
+                <Environment preset="studio" />
 
-                {/* Deep Black Fog acting as the "Void" */}
-                <fog attach="fog" args={['#050505', 10, 50]} />
+                {/* Soft White Fog for depth */}
+                <fog attach="fog" args={['#f5f5f5', 10, 50]} />
 
                 <React.Suspense fallback={null}>
                     {visualState === 'idle' && (
