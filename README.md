@@ -10,8 +10,8 @@ Designed to showcase **full-stack engineering** and **creative development** ski
 ## ⚡ Concept
 
 - **Archetype:** The Modern Creative Developer.
-- **Visuals:** Clean White Space, Soft Shadows, Premium Design, Sans-Serif Typography.
-- **Aesthetic:** **"White Gallery"** — Projects are presented as elegant, minimal cards with sophisticated design and subtle interactions.
+- **Visuals:** Glassmorphism, Aurora Gradients, Soft Shadows, Premium Design, Sans-Serif Typography.
+- **Aesthetic:** **"Glass & Aurora"** — Projects are presented as elegant glass cards with subtle color gradients (blue, purple, pink) and sophisticated interactions.
 - **Experience:**
   - **Desktop:** Fully immersive 3D Scene (`ImmersiveScene`) with cinematic **Z-Axis Depth Navigation**.
   - **Mobile:** Responsive "Bento Grid" dashboard for quick access.
@@ -70,13 +70,14 @@ Refined 3D cards designed as minimal showcases:
 
 ## 🎨 Design Philosophy
 
-This portfolio embraces a **premium, minimal aesthetic** inspired by modern design systems:
+This portfolio embraces a **Glass & Aurora aesthetic** inspired by modern design systems:
 
-- **White Space:** Generous padding and clean layouts
-- **Subtle Interactions:** Smooth transitions and hover effects
-- **Professional Typography:** Sans-serif fonts for clarity
-- **Soft Shadows:** Depth without harshness
-- **High-Key Lighting:** Bright, inviting 3D environment
+- **Glassmorphism:** Frosted glass effects with backdrop blur for depth
+- **Aurora Gradients:** Subtle color transitions (blue → purple → pink) that add life without overwhelming
+- **Smooth Interactions:** Hover effects with scale transforms and color-shifting shadows
+- **Professional Typography:** Clean sans-serif fonts with gradient text accents
+- **Soft Shadows:** Depth enhanced with colored shadows (purple glow)
+- **High-Key Lighting:** Bright, inviting 3D environment with ambient color tones
 
 ## 🚀 Getting Started
 

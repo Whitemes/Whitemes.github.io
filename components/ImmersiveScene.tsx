@@ -59,9 +59,12 @@ export function ImmersiveScene({ mouseX, mouseY, visualState, imageUrls = [], pr
     const isDark = isWarping || isHandover || isEntered;
 
     return (
-        <div className={`fixed inset-0 z-0 transition-colors duration-1000 ${isDark ? 'bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-50 via-white to-gray-100' : 'bg-transparent'}`}>
-            {/* Subtle Texture or Ambient Glow */}
-            <div className={`absolute inset-0 bg-white/10 ${isDark ? 'opacity-100' : 'opacity-0'} transition-opacity duration-1000`} />
+        <div className={`fixed inset-0 z-0 transition-colors duration-1000 ${isDark ? 'bg-gradient-to-br from-gray-50 via-blue-50/30 to-purple-50/30' : 'bg-gradient-to-br from-white via-blue-50/20 to-purple-50/20'}`}>
+            {/* Aurora Ambient Glow */}
+            <div className={`absolute inset-0 ${isDark ? 'opacity-100' : 'opacity-60'} transition-opacity duration-1000`}>
+                <div className="absolute top-0 left-1/4 w-1/3 h-1/3 bg-gradient-to-br from-blue-400/10 to-transparent rounded-full blur-3xl" />
+                <div className="absolute bottom-1/4 right-1/4 w-1/3 h-1/3 bg-gradient-to-tl from-purple-400/10 to-transparent rounded-full blur-3xl" />
+            </div>
 
             <Canvas>
                 {/* 

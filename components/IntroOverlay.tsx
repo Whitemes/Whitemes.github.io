@@ -49,11 +49,18 @@ export function IntroOverlay({ onInitialize }: IntroOverlayProps) {
             transition={{ duration: 0.8, ease: "easeInOut" }}
             className="fixed inset-0 z-20 flex flex-col items-center justify-center p-4 pointer-events-none"
         >
-            {/* The Clean Card */}
+            {/* Aurora Background Effect */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <div className="absolute top-0 -left-1/4 w-1/2 h-1/2 bg-gradient-to-br from-blue-400/20 via-purple-400/20 to-transparent rounded-full blur-3xl animate-pulse-slow" />
+                <div className="absolute bottom-0 -right-1/4 w-1/2 h-1/2 bg-gradient-to-tl from-pink-400/20 via-purple-400/20 to-transparent rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }} />
+            </div>
+
+            {/* The Glass Card with Aurora */}
             <div className="relative z-30 flex flex-col max-w-2xl w-full mx-auto
-                bg-white/90 backdrop-filter backdrop-blur-xl border border-gray-200/50 rounded-2xl overflow-hidden
-                shadow-[0_8px_40px_rgba(0,0,0,0.08)] pointer-events-auto
-                transition-all duration-500 hover:shadow-[0_12px_50px_rgba(0,0,0,0.12)]"
+                bg-white/70 backdrop-filter backdrop-blur-2xl border border-white/40 rounded-2xl overflow-hidden
+                shadow-[0_8px_40px_rgba(0,0,0,0.12)] pointer-events-auto
+                transition-all duration-500 hover:shadow-[0_12px_60px_rgba(0,0,0,0.16)]
+                before:absolute before:inset-0 before:bg-gradient-to-br before:from-blue-50/30 before:via-purple-50/30 before:to-pink-50/30 before:opacity-50"
             >
 
                 {/* Main Content Area */}
@@ -98,13 +105,16 @@ export function IntroOverlay({ onInitialize }: IntroOverlayProps) {
                     >
                         <button
                             onClick={onInitialize}
-                            className="group relative w-full overflow-hidden rounded-xl bg-gray-900 border border-gray-900 px-6 py-5 transition-all hover:bg-gray-800 hover:border-gray-800 hover:shadow-lg"
+                            className="group relative w-full overflow-hidden rounded-xl bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border border-gray-700/50 px-6 py-5 transition-all hover:scale-[1.02] hover:shadow-xl hover:shadow-purple-500/20"
                         >
+                            {/* Shimmer effect on hover */}
+                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+
                             <div className="flex items-center justify-center gap-3 relative z-10">
                                 <span className="text-base font-semibold tracking-wide text-white transition-colors">
                                     View Projects
                                 </span>
-                                <span className="text-sm text-gray-400 transition-colors">
+                                <span className="text-sm text-gray-400 group-hover:translate-y-0.5 transition-transform">
                                     ↓
                                 </span>
                             </div>

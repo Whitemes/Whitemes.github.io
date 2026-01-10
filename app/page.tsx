@@ -242,13 +242,13 @@ export default function Home() {
           <div className="hidden md:flex fixed bottom-10 left-1/2 -translate-x-1/2 z-50 items-center gap-6 pointer-events-auto">
             <button
               onClick={handlePrev}
-              className={`p-4 rounded-full bg-white/90 backdrop-blur-md border border-gray-200 text-gray-900 transition-all hover:scale-110 active:scale-95 hover:bg-white shadow-sm`}
+              className={`p-4 rounded-full bg-white/80 backdrop-blur-xl border border-white/60 text-gray-900 transition-all hover:scale-110 active:scale-95 hover:bg-white hover:border-purple-300 shadow-lg hover:shadow-purple-500/20`}
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
 
-            <div className="flex flex-col items-center bg-white/90 backdrop-blur-md border border-gray-200 rounded-full px-6 py-3 shadow-sm">
-              <span className="text-xl font-semibold text-gray-900">
+            <div className="flex flex-col items-center bg-white/80 backdrop-blur-xl border border-white/60 rounded-full px-6 py-3 shadow-lg">
+              <span className="text-xl font-semibold bg-gradient-to-r from-gray-900 via-purple-900 to-gray-900 bg-clip-text text-transparent">
                 {activeIndex + 1} <span className="text-gray-400">/</span> {projects.length}
               </span>
             </div>
@@ -256,7 +256,7 @@ export default function Home() {
             <button
               onClick={handleNext}
               disabled={activeIndex === projects.length - 1}
-              className={`p-4 rounded-full bg-gray-900 text-white transition-all hover:scale-110 active:scale-95 shadow-md disabled:opacity-30 disabled:bg-gray-300 disabled:text-gray-500 disabled:hover:scale-100 disabled:shadow-none ${activeIndex === projects.length - 1 ? 'cursor-not-allowed' : ''}`}
+              className={`p-4 rounded-full bg-gradient-to-r from-gray-900 via-purple-900 to-gray-900 text-white transition-all hover:scale-110 active:scale-95 shadow-lg hover:shadow-purple-500/30 disabled:opacity-30 disabled:from-gray-300 disabled:via-gray-300 disabled:to-gray-300 disabled:text-gray-500 disabled:hover:scale-100 disabled:shadow-none ${activeIndex === projects.length - 1 ? 'cursor-not-allowed' : ''}`}
             >
               <ChevronRight className="w-6 h-6" />
             </button>
