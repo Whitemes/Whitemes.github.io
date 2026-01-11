@@ -37,6 +37,24 @@ export default function Home() {
 
   const projects = [
     {
+      name: "Baba Is You - Engineering",
+      type: "GAME ENGINE",
+      description: "A professional reimplementation of the 'Baba Is You' puzzle game engine, focusing on Software Architecture, Production Debugging, and Cloud-Native Deployment.",
+      status: "ONLINE" as const,
+      uptime: "99.9%",
+      href: "https://babaisyou-production.up.railway.app",
+      imageUrl: "https://picsum.photos/id/133/1200/800", // Automobile/Mechanical/Engine looking
+      logs: [
+        "> Booting Spring Boot 3 kernel...",
+        "> Initializing WebSocket handler...",
+        "> Loading hexagonal architecture...",
+        "> Transmutation engine online...",
+        "> 8 levels loaded. Game Start.",
+      ],
+      githubUrl: "https://github.com/Whitemes/BabaIsYou",
+      techStack: ["Java 21", "Spring Boot 3", "WebSockets", "Docker", "Railway"],
+    },
+    {
       name: "Gesture Controlled 3D",
       type: "VISUAL INTERFACE",
       description: "An experimental interface allowing users to manipulate 3D particles in real-time using hand gestures via webcam computer vision.",
@@ -71,6 +89,42 @@ export default function Home() {
       ],
       githubUrl: "#",
       techStack: ["Node.js", "Telegram API", "Puppeteer", "GPT-4"],
+    },
+    {
+      name: "Immersive 3D Portfolio",
+      type: "WEB EXPERIENCE",
+      description: "This portfolio itself. A clean, immersive experience featuring 'fly-through' navigation, White Gallery aesthetics, and seamless WebGL transitions.",
+      status: "ONLINE" as const,
+      uptime: "100%",
+      href: "https://whitemes.github.io",
+      imageUrl: "https://picsum.photos/id/119/1200/800", // Laptop/Workstation
+      logs: [
+        "> Initializing R3F Engine...",
+        "> Loading assets (draco)...",
+        "> Baking lighting maps...",
+        "> Cinematic sequence ready...",
+        "> Welcome.",
+      ],
+      githubUrl: "https://github.com/Whitemes/portfolio-ramananjatovo",
+      techStack: ["Next.js 16", "R3F", "TypeScript", "Tailwind v4"],
+    },
+    {
+      name: "Anti-Procrastination Cockpit",
+      type: "PRODUCTIVITY APP",
+      description: "A minimalist productivity app that helps you focus on what matters most. Define your 3 key tasks, track habits, and work with a Pomodoro timer.",
+      status: "ACTIVE" as const,
+      uptime: "99.8%",
+      href: "https://anti-procrastination-cockpit-production.up.railway.app",
+      imageUrl: "https://picsum.photos/id/326/1200/800", // Workspace/Productivity
+      logs: [
+        "> Initializing focus engine...",
+        "> Loading The Big 3 tasks...",
+        "> Pomodoro timer ready...",
+        "> Habit tracker synced...",
+        "> Productivity mode active.",
+      ],
+      githubUrl: "https://github.com/Whitemes/Anti-Procrastination-Cockpit",
+      techStack: ["React", "Vite", "Tailwind CSS", "Supabase"],
     },
     {
       name: "Start Email Assistant",
@@ -125,60 +179,6 @@ export default function Home() {
       ],
       githubUrl: "#",
       techStack: ["Next.js", "FFmpeg", "Twitter API", "AI Agent"],
-    },
-    {
-      name: "Immersive 3D Portfolio",
-      type: "WEB EXPERIENCE",
-      description: "This portfolio itself. A clean, immersive experience featuring 'fly-through' navigation, White Gallery aesthetics, and seamless WebGL transitions.",
-      status: "ONLINE" as const,
-      uptime: "100%",
-      href: "https://whitemes.github.io",
-      imageUrl: "https://picsum.photos/id/119/1200/800", // Laptop/Workstation
-      logs: [
-        "> Initializing R3F Engine...",
-        "> Loading assets (draco)...",
-        "> Baking lighting maps...",
-        "> Cinematic sequence ready...",
-        "> Welcome.",
-      ],
-      githubUrl: "https://github.com/Whitemes/portfolio-ramananjatovo",
-      techStack: ["Next.js 16", "R3F", "TypeScript", "Tailwind v4"],
-    },
-    {
-      name: "Baba Is You - Engineering",
-      type: "GAME ENGINE",
-      description: "A professional reimplementation of the 'Baba Is You' puzzle game engine, focusing on Software Architecture, Production Debugging, and Cloud-Native Deployment.",
-      status: "ONLINE" as const,
-      uptime: "99.9%",
-      href: "https://babaisyou-production.up.railway.app",
-      imageUrl: "https://picsum.photos/id/133/1200/800", // Automobile/Mechanical/Engine looking
-      logs: [
-        "> Booting Spring Boot 3 kernel...",
-        "> Initializing WebSocket handler...",
-        "> Loading hexagonal architecture...",
-        "> Transmutation engine online...",
-        "> 8 levels loaded. Game Start.",
-      ],
-      githubUrl: "https://github.com/Whitemes/BabaIsYou",
-      techStack: ["Java 21", "Spring Boot 3", "WebSockets", "Docker", "Railway"],
-    },
-    {
-      name: "Anti-Procrastination Cockpit",
-      type: "PRODUCTIVITY APP",
-      description: "A minimalist productivity app that helps you focus on what matters most. Define your 3 key tasks, track habits, and work with a Pomodoro timer.",
-      status: "ACTIVE" as const,
-      uptime: "99.8%",
-      href: "https://anti-procrastination-cockpit-production.up.railway.app",
-      imageUrl: "https://picsum.photos/id/326/1200/800", // Workspace/Productivity
-      logs: [
-        "> Initializing focus engine...",
-        "> Loading The Big 3 tasks...",
-        "> Pomodoro timer ready...",
-        "> Habit tracker synced...",
-        "> Productivity mode active.",
-      ],
-      githubUrl: "https://github.com/Whitemes/Anti-Procrastination-Cockpit",
-      techStack: ["React", "Vite", "Tailwind CSS", "Supabase"],
     },
   ];
 
