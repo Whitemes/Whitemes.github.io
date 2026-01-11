@@ -84,7 +84,7 @@ function ProjectCard({ project, index, isActive, animateEntry = false }: { proje
                         */}
                         <div className={`
                             w-[1000px] h-[600px] relative
-                            bg-white/80 backdrop-blur-xl
+                            bg-white/95 backdrop-blur-xl
                             border border-white/60
                             rounded-2xl shadow-[0_8px_40px_rgba(0,0,0,0.12)] overflow-hidden
                             flex flex-row
@@ -101,7 +101,8 @@ function ProjectCard({ project, index, isActive, animateEntry = false }: { proje
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                     draggable={false}
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-white/80" />
+                                { /* REMOVED: Lighting gradient overlay as per user feedback */}
+                                {/* <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-white/80" /> */}
                             </div>
 
                             {/* Right: Clean Info Panel */}
