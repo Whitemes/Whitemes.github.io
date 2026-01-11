@@ -162,6 +162,24 @@ export default function Home() {
       githubUrl: "https://github.com/Whitemes/BabaIsYou",
       techStack: ["Java 21", "Spring Boot 3", "WebSockets", "Docker", "Railway"],
     },
+    {
+      name: "Anti-Procrastination Cockpit",
+      type: "PRODUCTIVITY APP",
+      description: "A minimalist productivity app that helps you focus on what matters most. Define your 3 key tasks, track habits, and work with a Pomodoro timer.",
+      status: "ACTIVE" as const,
+      uptime: "99.8%",
+      href: "https://anti-procrastination-cockpit-production.up.railway.app",
+      imageUrl: "https://picsum.photos/id/326/1200/800", // Workspace/Productivity
+      logs: [
+        "> Initializing focus engine...",
+        "> Loading The Big 3 tasks...",
+        "> Pomodoro timer ready...",
+        "> Habit tracker synced...",
+        "> Productivity mode active.",
+      ],
+      githubUrl: "https://github.com/Whitemes/Anti-Procrastination-Cockpit",
+      techStack: ["React", "Vite", "Tailwind CSS", "Supabase"],
+    },
   ];
 
   const handleNext = () => {
