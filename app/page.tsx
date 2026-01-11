@@ -43,7 +43,7 @@ export default function Home() {
       status: "ONLINE" as const,
       uptime: "99.9%",
       href: "https://babaisyou-production.up.railway.app",
-      imageUrl: "https://picsum.photos/id/133/1200/800", // Automobile/Mechanical/Engine looking
+      imageUrl: "/portfolio_1.png",
       logs: [
         "> Booting Spring Boot 3 kernel...",
         "> Initializing WebSocket handler...",
@@ -61,7 +61,7 @@ export default function Home() {
       status: "ACTIVE" as const,
       uptime: "99.9%",
       href: "https://gesture-controlled-particles-production.up.railway.app",
-      imageUrl: "https://picsum.photos/id/201/1200/800", // Electronics/Tech
+      imageUrl: "/portfolio_2.png",
       logs: [
         "> Initializing generic webcam...",
         "> Hand tracking model loaded...",
@@ -79,7 +79,7 @@ export default function Home() {
       status: "ACTIVE" as const,
       uptime: "02d 01h",
       href: "https://t.me/ResearchAssistGenBot",
-      imageUrl: "https://picsum.photos/id/180/1200/800", // Laptop/Work
+      imageUrl: "/portfolio_3.png",
       logs: [
         "> Payload received...",
         "> Query: 'Market trends'...",
@@ -97,7 +97,7 @@ export default function Home() {
       status: "ONLINE" as const,
       uptime: "100%",
       href: "https://whitemes.github.io",
-      imageUrl: "https://picsum.photos/id/119/1200/800", // Laptop/Workstation
+      imageUrl: "/portfolio_4.png",
       logs: [
         "> Initializing R3F Engine...",
         "> Loading assets (draco)...",
@@ -115,7 +115,7 @@ export default function Home() {
       status: "ACTIVE" as const,
       uptime: "99.8%",
       href: "https://anti-procrastination-cockpit-production.up.railway.app",
-      imageUrl: "https://picsum.photos/id/326/1200/800", // Workspace/Productivity
+      imageUrl: "/portfolio_5.png",
       logs: [
         "> Initializing focus engine...",
         "> Loading The Big 3 tasks...",
@@ -133,7 +133,7 @@ export default function Home() {
       status: "ACTIVE" as const,
       uptime: "12d 04h",
       href: "https://startemailassistant-production.up.railway.app",
-      imageUrl: "https://picsum.photos/id/3/1200/800", // Computer/Typing
+      imageUrl: "/portfolio_6.png",
       logs: [
         "> Watching IMAP stream...",
         "> New message detected: 'Inquiry'...",
@@ -151,7 +151,7 @@ export default function Home() {
       status: "ACTIVE" as const,
       uptime: "24d 12h",
       href: "https://meetinganalystai-production.up.railway.app",
-      imageUrl: "https://picsum.photos/id/48/1200/800", // Tech/Laptop
+      imageUrl: "/portfolio_7.png",
       logs: [
         "> Transcribing audio stream...",
         "> Diarizing speakers...",
@@ -169,7 +169,7 @@ export default function Home() {
       status: "ACTIVE" as const,
       uptime: "45d 12h",
       href: "https://socialmediarepurposer-production.up.railway.app",
-      imageUrl: "https://picsum.photos/id/60/1200/800", // Office/Code
+      imageUrl: "/portfolio_8.png",
       logs: [
         "> Parsing source URL...",
         "> Extracting key hooks...",
