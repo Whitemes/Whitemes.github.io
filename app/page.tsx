@@ -70,7 +70,7 @@ export default function Home() {
         "> Awaiting gesture...",
       ],
       githubUrl: "#",
-      techStack: ["React", "Three.js", "TensorFlow.js", "CV"],
+      techStack: ["React", "Three.js", "TensorFlow.js"],
     },
     {
       name: "Telegram Research Bot",
@@ -88,7 +88,7 @@ export default function Home() {
         "> Delievering payload.",
       ],
       githubUrl: "#",
-      techStack: ["Node.js", "Telegram API", "Puppeteer", "GPT-4"],
+      techStack: ["Node.js", "Telegram API", "GPT-4"],
     },
     {
       name: "Immersive 3D Portfolio",
