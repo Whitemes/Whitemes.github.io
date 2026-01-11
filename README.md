@@ -1,113 +1,125 @@
 # Portfolio 2025 — Johnny Ramananjatovo
 
-High-performance, immersive 3D portfolio experience.
-Designed to showcase **full-stack engineering** and **creative development** skills through a **"White Gallery"** aesthetic.
+Immersive 3D portfolio showcasing full-stack projects with **Glass & Aurora** aesthetic.
 
 ![Status](https://img.shields.io/badge/Status-Live-black?style=for-the-badge)
 ![Tech](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge)
 ![3D](https://img.shields.io/badge/WebGL-R3F-blue?style=for-the-badge)
 
-## ⚡ Concept
+**🌐 Live:** [whitemes.github.io](https://whitemes.github.io)
 
-- **Archetype:** The Modern Creative Developer.
-- **Visuals:** Glassmorphism, Aurora Gradients, Soft Shadows, Premium Design, Sans-Serif Typography.
-- **Aesthetic:** **"Glass & Aurora"** — Projects are presented as elegant glass cards with subtle color gradients (blue, purple, pink) and sophisticated interactions.
-- **Experience:**
-  - **Desktop:** Fully immersive 3D Scene (`ImmersiveScene`) with cinematic **Z-Axis Depth Navigation**.
-  - **Mobile:** Responsive "Bento Grid" dashboard for quick access.
+---
 
-## 🛠 Tech Stack
+## ⚡ What is this?
 
-- **Framework:** [Next.js 16](https://nextjs.org/) (App Router, Turbopack)
-- **Language:** TypeScript
-- **Styling:** TailwindCSS v4
-- **3D Engine:** [React Three Fiber](https://docs.pmndrs.io/react-three-fiber) (Three.js) + `@react-three/drei`
-- **Animations:**
-  - `@react-spring/three` (Physics-based depth transitions)
-  - `framer-motion` (UI transitions & State orchestration)
-- **Icons:** `lucide-react`
+An interactive 3D portfolio where you **fly through a tunnel** of projects. Each project is presented as a glassmorphic card with smooth animations and detailed information.
 
-## 🚀 Key Features
+**Tech Stack:** Next.js 16 • React Three Fiber • TypeScript • Tailwind v4 • Framer Motion
 
-### 1. The Smooth Transition Effect
-A seamless, elegant entry sequence:
-- Starts with a clean welcome overlay.
-- Triggers a **subtle warp** effect upon initialization.
-- Smoothly blends into the 3D project tunnel using an **"Overlap Handoff"** technique.
+**Features:**
+- 🎮 Immersive 3D navigation with Z-axis depth
+- 🎨 Glass & Aurora aesthetic (glassmorphism + color gradients)
+- 📱 Responsive (3D on desktop, grid on mobile)
+- ⚡ Optimized performance (60fps target)
 
-### 2. Premium Project Cards
-Refined 3D cards designed as minimal showcases:
-- **Clean Design:** White backgrounds, subtle shadows, and professional typography.
-- **Clear Information:** Displays project type, description, and tech stack.
-- **Direct Links:** Quick access to live demos and **GitHub repositories**.
-- **Smooth Animations:** Cards scale and fade elegantly upon focus.
+---
 
-### 3. Immersive "Fly-Through" Navigation
-- **Z-Axis Travel:** Users physically travel through the depth of the scene to reach projects.
-- **Atmospheric Depth:** Distant projects fade into the soft fog until brought into focus.
-- **Physics-Based Controls:** Smooth camera damping and acceleration using `CameraControls`.
+## 🗂️ Projects Showcase
 
-### 4. Responsive & Accessible
-- **Mobile Fallback:** Automatically switches to a clean, high-performance **Bento Grid** layout on smaller screens.
-- **Performance:** Complex 3D effects are conditionally rendered to ensure 60fps performance.
+### 1. **Baba Is You - Engineering**
+**Type:** Game Engine
+**Tech:** Java 21, Spring Boot 3, WebSockets, Docker, Railway
+**Description:** Professional reimplementation of the puzzle game "Baba Is You" with hexagonal architecture, real-time multiplayer via WebSockets, and cloud deployment.
+**Visual for AI:** *A colorful puzzle game interface with text blocks forming rules (e.g., "BABA IS YOU", "WALL IS STOP"). Show hexagonal architecture diagram overlay with Spring Boot logo, WebSocket connections, and Docker containers in the background.*
 
-## 📂 Project Structure
+---
+
+### 2. **Gesture Controlled 3D**
+**Type:** Visual Interface
+**Tech:** React, Three.js, TensorFlow.js, Computer Vision
+**Description:** Experimental interface that lets users manipulate 3D particles in real-time using hand gestures detected via webcam and TensorFlow.js hand tracking models.
+**Visual for AI:** *A futuristic holographic interface showing a human hand controlling floating 3D particles. Display webcam feed in corner with hand skeleton overlay, glowing particles responding to finger movements, and TensorFlow.js neural network visualization.*
+
+---
+
+### 3. **Telegram Research Bot**
+**Type:** AI Research Assistant
+**Tech:** Node.js, Telegram API, Puppeteer, GPT-4
+**Description:** Deeply integrated Telegram bot that acts as an on-demand research assistant. Scrapes the web for news and synthesizes complex topics using GPT-4.
+**Visual for AI:** *A Telegram chat interface with a bot avatar. Show web scraping visualization (multiple browser windows), data streams flowing into GPT-4 brain icon, and synthesized research summary appearing in chat bubbles.*
+
+---
+
+### 4. **Immersive 3D Portfolio**
+**Type:** Web Experience
+**Tech:** Next.js 16, React Three Fiber, TypeScript, Tailwind v4
+**Description:** This portfolio itself. Features fly-through navigation, glassmorphic design with aurora gradients, and seamless WebGL transitions in a 3D tunnel.
+**Visual for AI:** *A 3D tunnel perspective view with floating glass cards displaying project previews. Show aurora color gradients (blue/purple/pink) in the background, depth-of-field blur on distant cards, and glassmorphic frosted glass effects.*
+
+---
+
+### 5. **Anti-Procrastination Cockpit**
+**Type:** Productivity App
+**Tech:** React, Vite, Tailwind CSS, Supabase
+**Description:** Minimalist productivity dashboard that helps users focus on their 3 most important daily tasks, track habits, and work with a Pomodoro timer.
+**Visual for AI:** *A clean, minimal productivity dashboard with "The Big 3" task list highlighted, circular Pomodoro timer counting down (25:00), habit tracker checkboxes, and progress statistics. Use calm colors (white/gray) with green accents for completed items.*
+
+---
+
+### 6. **Start Email Assistant**
+**Type:** Automation Agent
+**Tech:** Python, IMAP, OpenAI API, Flask
+**Description:** Background agent that monitors incoming emails via IMAP, categorizes them by urgency using sentiment analysis, and automatically drafts context-aware replies with AI.
+**Visual for AI:** *An email inbox interface with AI assistant overlay. Show incoming emails being automatically sorted into priority categories, sentiment analysis gauges (positive/neutral/urgent), and AI writing a draft response with highlighted suggestions.*
+
+---
+
+### 7. **Meeting Analyst AI**
+**Type:** NLP Service
+**Tech:** Whisper, PyTorch, Notion API, LLM
+**Description:** Automated intelligence pipeline that ingests meeting audio, transcribes it with Whisper, identifies speakers, and generates executive summaries with action items synced to Notion.
+**Visual for AI:** *Audio waveform being transcribed in real-time, speaker diarization showing multiple colored speech segments, LLM brain processing text, and clean executive summary with bullet points and action items appearing in a Notion-style interface.*
+
+---
+
+### 8. **Content Remix AI**
+**Type:** Content Pipeline
+**Tech:** Next.js, FFmpeg, Twitter API, AI Agents
+**Description:** Content repurposing engine that transforms long-form blog posts into engaging Twitter threads and short-form video scripts automatically using AI agents.
+**Visual for AI:** *A content transformation pipeline visualization. Show a blog article on left, AI agent in center (brain icon with gears), and outputs on right: Twitter thread preview and video script storyboard. Include FFmpeg logo and Twitter bird icon.*
+
+---
+
+## 🚀 Quick Start
 
 ```bash
-/
-├── app/                  # Next.js 16 App Router
-│   ├── page.tsx          # Main Entry (State Orchestrator)
-│   └── globals.css       # Tailwind v4 Configuration
-├── components/           # UI & 3D Components
-│   ├── ImmersiveScene.tsx      # R3F Canvas Entry Point & Lighting
-│   ├── IntroOverlay.tsx        # Initial Welcome UI & Navigation
-│   ├── BentoGrid.tsx           # Mobile/2D Dashboard Interface
-│   └── scene/
-│       ├── ProjectTunnel.tsx   # 3D Project Cards & Logic
-│       └── WarpTunnel.tsx      # Transition Effect
-└── public/               # Static Assets
-```
-
-## 🎨 Design Philosophy
-
-This portfolio embraces a **Glass & Aurora aesthetic** inspired by modern design systems:
-
-- **Glassmorphism:** Frosted glass effects with backdrop blur for depth
-- **Aurora Gradients:** Subtle color transitions (blue → purple → pink) that add life without overwhelming
-- **Smooth Interactions:** Hover effects with scale transforms and color-shifting shadows
-- **Professional Typography:** Clean sans-serif fonts with gradient text accents
-- **Soft Shadows:** Depth enhanced with colored shadows (purple glow)
-- **High-Key Lighting:** Bright, inviting 3D environment with ambient color tones
-
-## 🚀 Getting Started
-
-```bash
-# Install dependencies
+# Clone and install
+git clone https://github.com/Whitemes/Whitemes.github.io.git
+cd Whitemes.github.io
 npm install
 
 # Run development server
 npm run dev
 
-# Build for production
+# Build and deploy
 npm run build
-
-# Deploy to GitHub Pages
 npm run deploy
 ```
 
-Visit [http://localhost:3000](http://localhost:3000) to see the portfolio in action.
+Visit [http://localhost:3000](http://localhost:3000)
+
+---
 
 ## 📦 Deployment
 
-This portfolio is configured for **GitHub Pages** deployment with automatic static export via Next.js.
+- **Platform:** GitHub Pages
+- **CI/CD:** GitHub Actions (auto-deploy on push to `main`)
+- **Static Export:** Next.js `output: 'export'` mode
 
-- **Live URL:** [whitemes.github.io](https://whitemes.github.io)
-- **CI/CD:** GitHub Actions workflow for automatic deployment
+---
 
 ## 📄 License
 
 MIT © Johnny Ramananjatovo
 
----
-
-**Built with passion using Next.js 16, React Three Fiber, and TypeScript.**
+**Built with Next.js 16, React Three Fiber, and TypeScript.**
