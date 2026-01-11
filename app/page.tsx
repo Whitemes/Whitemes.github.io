@@ -43,7 +43,7 @@ export default function Home() {
       status: "ONLINE" as const,
       uptime: "99.9%",
       href: "https://babaisyou-production.up.railway.app",
-      imageUrl: "/portfolio_1.png",
+      imageUrl: "/portfolio_1.jpg",
       logs: [
         "> Booting Spring Boot 3 kernel...",
         "> Initializing WebSocket handler...",
@@ -61,7 +61,7 @@ export default function Home() {
       status: "ACTIVE" as const,
       uptime: "99.9%",
       href: "https://gesture-controlled-particles-production.up.railway.app",
-      imageUrl: "/portfolio_2.png",
+      imageUrl: "/portfolio_2.jpg",
       logs: [
         "> Initializing generic webcam...",
         "> Hand tracking model loaded...",
@@ -79,7 +79,7 @@ export default function Home() {
       status: "ACTIVE" as const,
       uptime: "02d 01h",
       href: "https://t.me/ResearchAssistGenBot",
-      imageUrl: "/portfolio_3.png",
+      imageUrl: "/portfolio_3.jpg",
       logs: [
         "> Payload received...",
         "> Query: 'Market trends'...",
@@ -97,7 +97,7 @@ export default function Home() {
       status: "ONLINE" as const,
       uptime: "100%",
       href: "https://whitemes.github.io",
-      imageUrl: "/portfolio_4.png",
+      imageUrl: "/portfolio_4.jpg",
       logs: [
         "> Initializing R3F Engine...",
         "> Loading assets (draco)...",
@@ -115,7 +115,7 @@ export default function Home() {
       status: "ACTIVE" as const,
       uptime: "99.8%",
       href: "https://anti-procrastination-cockpit-production.up.railway.app",
-      imageUrl: "/portfolio_5.png",
+      imageUrl: "/portfolio_5.jpg",
       logs: [
         "> Initializing focus engine...",
         "> Loading The Big 3 tasks...",
@@ -133,7 +133,7 @@ export default function Home() {
       status: "ACTIVE" as const,
       uptime: "12d 04h",
       href: "https://startemailassistant-production.up.railway.app",
-      imageUrl: "/portfolio_6.png",
+      imageUrl: "/portfolio_6.jpg",
       logs: [
         "> Watching IMAP stream...",
         "> New message detected: 'Inquiry'...",
@@ -151,7 +151,7 @@ export default function Home() {
       status: "ACTIVE" as const,
       uptime: "24d 12h",
       href: "https://meetinganalystai-production.up.railway.app",
-      imageUrl: "/portfolio_7.png",
+      imageUrl: "/portfolio_7.jpg",
       logs: [
         "> Transcribing audio stream...",
         "> Diarizing speakers...",
@@ -169,7 +169,7 @@ export default function Home() {
       status: "ACTIVE" as const,
       uptime: "45d 12h",
       href: "https://socialmediarepurposer-production.up.railway.app",
-      imageUrl: "/portfolio_8.png",
+      imageUrl: "/portfolio_8.jpg",
       logs: [
         "> Parsing source URL...",
         "> Extracting key hooks...",
